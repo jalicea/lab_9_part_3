@@ -4,7 +4,10 @@ void setup() {
 }
 
 void draw() {
-  // face
+  drawFace();
+}
+
+void drawFace(){// face
   fill(0, 200, 100);
   ellipse(250, 250, 150, 150);  
   
