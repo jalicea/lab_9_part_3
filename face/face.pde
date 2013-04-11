@@ -4,9 +4,7 @@ void setup() {
 }
 
 void draw() {
-  drawFace(250,250);
 }
-
 
 void drawFace(int x,int y){
   // face
@@ -20,12 +18,17 @@ void drawFace(int x,int y){
   
   // eyeballs
   fill(0, 0, 0);
+  ellipse(x-25, y-15, 15, 30); 
   ellipse(x+25, y-15, 15, 30); 
-  ellipse(X-25, y-15, 15, 30); 
+
 
   // worried mouth
   fill(255, 255, 255);
   ellipse(x,y+40, 70, 20);
+}
+
+void mouseClicked(){
+  drawFace(mouseX,mouseY);
 }
 
 
